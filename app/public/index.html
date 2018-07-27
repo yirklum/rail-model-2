@@ -22,13 +22,12 @@
         <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.4/dist/vivus.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
 
     </head>
 
     <body>
-        <!-- Fake Loader -->
-        <div id="fakeLoader"></div>
 
         <!-- particles.js container -->
         <div id="particles-js">
@@ -37,9 +36,9 @@
         <!-- Title -->
         <div class="headline">
             <object id="title" type="image/svg+xml" data="./images/f-bay.svg"></object>
-            <object id="slogan" type="image/svg+xml" data="./images/slogan.svg"></object>
+            <h2 class="slogan">The "F" Stands For Fun!</h2>
         </div>
-
+              
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
               
@@ -50,20 +49,20 @@
                     </li>  
 
                     <li class="nav-item active">
-                        <a id="grumpy" class="nav-link disappearing-nav" href="#">Random Photo<span class="sr-only">(current)</span></a>
+                        <a id="grumpy" class="nav-link" href="#">Random Photo<span class="sr-only">(current)</span></a>
                     </li>  
 
                     <li class="nav-item active">
-                        <a id="surprise" class="nav-link disappearing-nav" href="#">Get A Surprise!<span class="sr-only">(current)</span></a>
+                        <a id="surprise" class="nav-link" href="#">Get A Surprise!<span class="sr-only">(current)</span></a>
                     </li>  
 
                     <li class="nav-item active">
-                        <a id="danger" class="nav-link disappearing-nav" href="#">Danger: Don't Click <span class="sr-only">(current)</span></a>
+                        <a id="danger" class="nav-link open-modal" href="#">Danger: Don't Click <span class="sr-only">(current)</span></a>
                     </li>  
                 </ul>
             </div>
         </nav>
-        
+        <div class="bottom-half">
         <!-- Cat -->
         <img id="cat" src="https://media.giphy.com/media/7lsw8RenVcjCM/giphy.gif"/>
 
@@ -117,11 +116,26 @@
                     <a href="#" class="btn btn-primary">Buy!</a>
                 </div>
             </div>
-        </div>  
-   
-        
-        
+        </div> 
+        </div>
 
+
+        <button class="open-modal">Open modal</button>
+
+
+        <!-- Pop up modal -->
+        <div class="modal-shade"></div>
+        <div class="modal-container">
+          <div class="modal">
+            <h1>You're doomed!!</h1>
+            <p>Not really, but you should learn to follow directions better.</p>
+            <div class="modal-actions">
+              <button class="modal-cancel">Cancel</button>
+              <button class="modal-ok">Ok!</button>
+            </div>
+          </div>
+        </div>
+   
 
         <!-- Particles script -->
         <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -137,9 +151,8 @@
         <!-- Anime JS script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
-        <!-- Fake Loader JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fakeLoader.js/1.1.0/fakeLoader.min.js"></script>
-        <script type="text/javascript"> $("#fakeloader").fakeLoader();</script>
+        <!-- Popmotion script -->
+        <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
 
         <script src="./js/apps.js"></script>
 
