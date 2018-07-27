@@ -1,0 +1,31 @@
+{
+  "name": "rail-model-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yirklum/rail-model-2.git"
+  },
+  "author": "Christina Rust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yirklum/rail-model-2/issues"
+  },
+  "homepage": "https://github.com/yirklum/rail-model-2#readme",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "animejs": "^2.2.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "particle.js": "^1.0.7",
+    "particles.js": "^2.0.0",
+    "path": "^0.12.7",
+    "velocity-animate": "^1.5.1",
+    "vivus": "^0.4.4"
+  }
+}

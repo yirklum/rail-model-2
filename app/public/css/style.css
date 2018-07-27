@@ -1,0 +1,184 @@
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    position: absolute;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    background-color: cornflowerblue;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+
+/* Header */
+
+.headline {
+  background-color: rgba(255,255,255, 0.8);
+  padding: 15px;
+}
+
+#title {
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: blue;
+  padding-left: 10%;
+}
+
+.nav-link {
+  color: white;
+  font-size: 28px;
+  font-family: 'Do Hyeon', sans-serif;
+  z-index: 3;
+}
+
+.nav-item {
+  width: 300px;
+}
+
+/* Cat */
+
+#cat {
+  height: 100px;
+  position: relative;
+  left: -300px;
+}
+
+.flying-cat {
+    animation-name: flying-cat;
+    animation-duration: 10s;
+    z-index: 2;
+}
+
+@keyframes flying-cat {
+    0%   {left:-300px; top:0px;}
+    25%  {left:0px; top:150px;}
+    50%  {left:400px; top:250px;}
+    75%  {left:800px; top:50px;}
+    100% {left:1400px; top:200px;}
+}
+
+/* Product cards */
+
+.product {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: solid 3px lightgray;
+}
+
+.products {
+  position: absolute;
+  width: 1000px;
+  margin-left: -1000px;
+  /* display: none; */
+}
+
+/* Shopping Prompt */
+
+.prompt {
+  background-image: url("../images/online-shopping.jpeg");
+  background-size: cover;
+  height: 300px;
+}
+
+.prompt-card {
+  width: 550px;
+  background-color: #ffc9eb;
+  /* margin-top: 25px; */
+  margin-left: 28%;
+  border: solid 3px darkgray;
+  display: block;
+}
+
+#prompt-button {
+  position: relative;
+  right: 120px;
+  top: 200px;
+}
+
+.money {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+/* Grumpy Cat */
+.cat-page {
+  background-color: navy;
+}
+
+.grumpy-buttons {
+  display: inline;
+  margin-left: 28%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#stay, #return {
+  margin-left: 5%;
+}
+
+.cat-page img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+body.picture-page {
+  width: 100%;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+}
