@@ -1,11 +1,12 @@
 {
   "name": "rail-model-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstrating RAIL model with animation libraries",
   "main": "server.js",
   "scripts": {
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
